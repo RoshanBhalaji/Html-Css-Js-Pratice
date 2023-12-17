@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/images/1.jpg');
+    
+   
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+}
+body::before{
+    content: "";
+    background: inherit;
+    filter: blur(0.9px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: filter 0.5s ease-in-out;
+
+}
+
+
+.container {
+    padding: 2px;
+    overflow: hidden;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top:45px;
+    
+    
+}
+.newyear{
+    font-family: 'Inspiration', cursive;
+    font-size: 60px;
+    font-weight: 400px;
+    margin-bottom:20px;
+    text-align: center;
+
+
+    
+
+}
+.box{
+    width:50px;
+    padding-bottom:30px;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    
+
+    
+}
+
+@media (min-width:576px){
+    .newyear{
+        font-size: 60px;
+    }
+    .box{
+        padding-bottom: 20px;
+    }
+}
+@media (min-width:768px){
+    .newyear{
+        font-size: 80px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .box{
+        padding-bottom: 120px;
+    }
+}
